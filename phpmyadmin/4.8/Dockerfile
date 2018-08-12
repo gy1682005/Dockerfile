@@ -10,3 +10,6 @@ RUN cd /var/tmp && curl https://files.phpmyadmin.net/phpMyAdmin/"$PMA_VER"/phpMy
     rm -rf /var/tmp/*
 
 COPY config/config.inc.php /var/www/html/
+
+WORKDIR /var/www/html
+EXPOSE 80 8080
