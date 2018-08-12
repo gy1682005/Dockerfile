@@ -8,7 +8,7 @@ RUN mkdir -p /var/www/html &&\
     chown -R apache:apache /var/www/html
 
 COPY config/caddy.conf /etc/caddy/
-COPY config/caddy.ini /etc/supervisor/conf.d/
+COPY config/caddy.ini /etc/supervisord.d/
 
 WORKDIR /var/www/html
 EXPOSE 80 8080
